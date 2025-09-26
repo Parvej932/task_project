@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                   PrimaryText(text: "Selected Location", fontSize: 20),
                   const SizedBox(height: 15),
                   Container(
-                    padding: const EdgeInsets.all(15),
+                    padding: EdgeInsets.all(10),
                     height: 56,
                     width: MediaQuery.of(context).size.width * 0.9,
                     decoration: BoxDecoration(
@@ -43,6 +43,7 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(50),
                     ),
                     child: Row(
+                      
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         const Icon(Icons.location_on_outlined,
@@ -50,10 +51,13 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(width: 10),
                         Obx(() => CustomText(
                             text:
-                            "Selected Location: ${alarmController.location.value}")),
+                            "${alarmController.location.value}")),
                       ],
                     ),
                   ),
+                  const SizedBox(height: 28),
+                  PrimaryText(text: "Alarms", fontSize: 18),
+                  const SizedBox(height: 15),
                 ],
               ),
               const SizedBox(height: 25),
