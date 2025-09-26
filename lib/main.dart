@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Parvej Task',
         home:
-         Onboarding(),
+       //  Onboarding(),
      // Location()
-     // HomeScreen(),
+      HomeScreen(),
         getPages: [
           GetPage(name: '/', page: () => Onboarding()),
           GetPage(name: '/location', page: () => Location()),

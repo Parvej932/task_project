@@ -37,6 +37,10 @@ dependencies:
   get:
   video_player:
   google_fonts:
+  geolocator:
+  permission_handler:
+  flutter_local_notifications:
+  timezone:
 
 dev_dependencies:
   flutter_test:
