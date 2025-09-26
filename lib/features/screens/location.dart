@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:taskproject/common_widgets/custom_button.dart';
 import 'package:taskproject/common_widgets/custom_text.dart';
 
@@ -64,7 +65,9 @@ class Location extends StatelessWidget {
             ),
 
              SizedBox(height: 8,),
-              CustomButton(label: "Home", onPressed: (){})
+              CustomButton(label: "Home", onPressed: (){
+                Get.offAllNamed('/home');
+              })
 
             ],
           ),

@@ -145,7 +145,7 @@ class CustomText extends StatelessWidget {
       textStyle: TextStyle(
         fontSize: fontSize ?? 16,
         fontWeight: fontWeight ?? FontWeight.w400,
-        color: color ?? MyColors.textColor,
+        color: color ?? MyColors.textColor.withOpacity(0.6),
       ),
     );
 
@@ -154,7 +154,7 @@ class CustomText extends StatelessWidget {
       fontFamily: fontFamily,
       fontSize: fontSize ?? 16,
       fontWeight: fontWeight ?? FontWeight.w400,
-      color: color ?? MyColors.textColor,
+      color: color ?? MyColors.textColor.withOpacity(0.6),
     );
 
     return Text(

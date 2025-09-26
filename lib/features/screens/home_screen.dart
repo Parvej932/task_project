@@ -33,14 +33,13 @@ class HomeScreen extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  PrimaryText(text: "Selected Location"),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 30,),
+                  PrimaryText(text: "Selected Location",fontSize: 20,),
+                  SizedBox(height: 15,),
                   CustomTextField(hintText: "Add your location",
                     prefixIcon: Icon(Icons.location_on_outlined, color: MyColors.textColor.withOpacity(0.8),),
                   ),
@@ -53,8 +52,8 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  PrimaryText(text: "Alarms"),
-                  SizedBox(height: 10,),
+                  PrimaryText(text: "Alarms",fontSize: 18,),
+                  SizedBox(height: 15,),
                   Container(
                     padding: EdgeInsets.all(15),
                     height: 56,
@@ -79,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   Container(
                     padding: EdgeInsets.all(15),
                     height: 56,
@@ -91,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        CustomText(text: "7:10 pm"),
+                        CustomText(text: "6:55 pm"),
                         Row(
                           children: [
                             CustomText(text: "Fri 21 Mar 2025",fontSize: 14,),
@@ -103,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   Container(
                     padding: EdgeInsets.all(15),
                     height: 56,
@@ -138,7 +137,7 @@ class HomeScreen extends StatelessWidget {
       ) ,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
+         Get.offAllNamed("/");
         },
         backgroundColor: MyColors.buttonColor,
         shape: CircleBorder(),

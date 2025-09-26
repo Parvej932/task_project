@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../common_widgets/custom_button.dart';
 import '../../common_widgets/custom_text.dart';
 import '../../constants/colors.dart';
 import '../../helpers/onboard_model.dart';
 import '../controller/video.dart';
+import 'location.dart';
 
 
 class Onboarding extends StatefulWidget {
@@ -121,6 +123,10 @@ class _OnboardingState extends State<Onboarding> {
                 ),
                 SizedBox(height: 20,),
                 CustomButton(label: 'Next', onPressed: (){
+                  if (_currentIndex == onboardData.length -1){
+                    Get.offAllNamed("/location");
+                  }
+
                   _controller.nextPage(duration: Duration(milliseconds: 500),
                       curve: Curves.ease);
                 }
