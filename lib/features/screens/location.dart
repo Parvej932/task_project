@@ -44,7 +44,9 @@ class Location extends StatelessWidget {
               height: 56,
               width: MediaQuery.of(context).size.width *0.9,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.offAllNamed('/home');
+                },
                 style: OutlinedButton.styleFrom(
                   side: BorderSide(color: MyColors.textColor.withOpacity(0.5),
                       width: 1),
