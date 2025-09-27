@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                     final alarm = alarmController.alarms[index];
                     final alarmId = alarm.millisecondsSinceEpoch;
 
-                    // Ensure switch is initialized
+
                     alarmController.switchMap.putIfAbsent(
                         alarmId, () => true.obs);
 

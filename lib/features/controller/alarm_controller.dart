@@ -9,7 +9,7 @@ class AlarmController extends GetxController {
   var location = ''.obs;
   var alarms = <DateTime>[].obs;
 
-  // 🔁 switchMap merged here (alarmId -> switch value)
+
   var switchMap = <int, RxBool>{}.obs;
 
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
